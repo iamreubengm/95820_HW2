@@ -6,7 +6,7 @@ A comprehensive implementation of Retrieval-Augmented Generation (RAG) systems f
 
 ## Overview
 
-This project implements and evaluates multiple RAG architectures, comparing embedding dimensions, retrieval strategies, and prompting techniques. The system achieves a **124% F1 score improvement** over no-retrieval baselines and provides insights into optimal production configurations.
+This project implements and evaluates multiple RAG architectures, comparing embedding dimensions, retrieval strategies, and prompting techniques. The system achieves a **148% F1 score improvement** over no-retrieval baselines and provides insights into optimal production configurations.
 
 ## Key Features
 
