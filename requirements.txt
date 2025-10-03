@@ -1,0 +1,14 @@
+pymilvus[milvus_lite]
+transformers
+datasets
+sentence-transformers
+ragas
+evaluate
+pandas
+numpy
+torch
+matplotlib
+seaborn
+scikit-learn
+tqdm
+langchain-community

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "date": "2025-09-30T22:14:41.094211",
+    "dataset": "RAG Mini Wikipedia",
+    "total_queries": 918,
+    "embedding_model": "all-mpnet-base-v2",
+    "llm_model": "google/flan-t5-base",
+    "embedding_dim": "384",
+    "prompting_style": "persona"
+  },
+  "strategy_comparison": [
+    {
+      "Strategy": "NO RAG",
+      "Exact Match": 0.1328976034858388,
+      "F1 Score": 0.17529747259445885
+    }
+  ],
+  "detailed_results": {
+    "NO RAG": {
+      "exact_match": 0.1328976034858388,
+      "f1_score": 0.17529747259445885,
+      "num_samples": 918,
+      "statistics": {
+        "em_std": 0.339464034138463,
+        "f1_std": 0.34537538756141145,
+        "em_min": 0.0,
+        "em_max": 1.0,
+        "f1_min": 0.0,
+        "f1_max": 1.0
+      }
+    }
+  }
+}

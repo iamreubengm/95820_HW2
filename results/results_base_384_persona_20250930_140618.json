@@ -1,0 +1,80 @@
+{
+  "metadata": {
+    "date": "2025-09-30T14:06:18.446273",
+    "dataset": "RAG Mini Wikipedia",
+    "total_queries": 918,
+    "embedding_model": "all-mpnet-base-v2",
+    "llm_model": "google/flan-t5-base",
+    "embedding_dim": 768
+  },
+  "strategy_comparison": [
+    {
+      "Strategy": "top1",
+      "Exact Match": 0.3289760348583878,
+      "F1 Score": 0.3924466037676838
+    },
+    {
+      "Strategy": "top3",
+      "Exact Match": 0.3028322440087146,
+      "F1 Score": 0.38544000926675726
+    },
+    {
+      "Strategy": "top5",
+      "Exact Match": 0.18736383442265794,
+      "F1 Score": 0.25556011110527665
+    }
+  ],
+  "detailed_results": {
+    "top1": {
+      "exact_match": 0.3289760348583878,
+      "f1_score": 0.3924466037676838,
+      "num_samples": 918,
+      "statistics": {
+        "em_std": 0.4698412533475968,
+        "f1_std": 0.455839763049324,
+        "em_min": 0.0,
+        "em_max": 1.0,
+        "f1_min": 0.0,
+        "f1_max": 1.0
+      }
+    },
+    "top3": {
+      "exact_match": 0.3028322440087146,
+      "f1_score": 0.38544000926675726,
+      "num_samples": 918,
+      "statistics": {
+        "em_std": 0.45948327063927036,
+        "f1_std": 0.44863278206880786,
+        "em_min": 0.0,
+        "em_max": 1.0,
+        "f1_min": 0.0,
+        "f1_max": 1.0
+      }
+    },
+    "top5": {
+      "exact_match": 0.18736383442265794,
+      "f1_score": 0.25556011110527665,
+      "num_samples": 918,
+      "statistics": {
+        "em_std": 0.39020331619951254,
+        "f1_std": 0.3985846502683822,
+        "em_min": 0.0,
+        "em_max": 1.0,
+        "f1_min": 0.0,
+        "f1_max": 1.0
+      }
+    }
+  },
+  "best_strategies": {
+    "best_f1": "top1",
+    "best_em": "top1",
+    "best_f1_score": 0.3924466037676838,
+    "best_em_score": 0.3289760348583878
+  },
+  "ragas": {
+    "faithfulness": 0.69,
+    "answer_relevancy": 0.7863004428217071,
+    "context_precision": 0.6199999999379999,
+    "context_recall": 0.44
+  }
+}

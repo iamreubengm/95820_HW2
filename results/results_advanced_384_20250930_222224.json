@@ -1,0 +1,81 @@
+{
+  "metadata": {
+    "date": "2025-09-30T22:22:24.226115",
+    "dataset": "RAG Mini Wikipedia",
+    "total_queries": 918,
+    "embedding_model": "all-mpnet-base-v2",
+    "llm_model": "google/flan-t5-base",
+    "embedding_dim": "768",
+    "prompting_style": "advanced"
+  },
+  "strategy_comparison": [
+    {
+      "Strategy": "top1",
+      "Exact Match": 0.27233115468409586,
+      "F1 Score": 0.3495459541164131
+    },
+    {
+      "Strategy": "top3",
+      "Exact Match": 0.30501089324618735,
+      "F1 Score": 0.3972580321656552
+    },
+    {
+      "Strategy": "top5",
+      "Exact Match": 0.3104575163398693,
+      "F1 Score": 0.42436398318756617
+    }
+  ],
+  "detailed_results": {
+    "top1": {
+      "exact_match": 0.27233115468409586,
+      "f1_score": 0.3495459541164131,
+      "num_samples": 918,
+      "statistics": {
+        "em_std": 0.4451594061373105,
+        "f1_std": 0.4423365685543677,
+        "em_min": 0.0,
+        "em_max": 1.0,
+        "f1_min": 0.0,
+        "f1_max": 1.0
+      }
+    },
+    "top3": {
+      "exact_match": 0.30501089324618735,
+      "f1_score": 0.3972580321656552,
+      "num_samples": 918,
+      "statistics": {
+        "em_std": 0.460412041814015,
+        "f1_std": 0.4486675846843158,
+        "em_min": 0.0,
+        "em_max": 1.0,
+        "f1_min": 0.0,
+        "f1_max": 1.0
+      }
+    },
+    "top5": {
+      "exact_match": 0.3104575163398693,
+      "f1_score": 0.42436398318756617,
+      "num_samples": 918,
+      "statistics": {
+        "em_std": 0.4626809342170358,
+        "f1_std": 0.4496182634995306,
+        "em_min": 0.0,
+        "em_max": 1.0,
+        "f1_min": 0.0,
+        "f1_max": 1.0
+      }
+    }
+  },
+  "best_strategies": {
+    "best_f1": "top5",
+    "best_em": "top5",
+    "best_f1_score": 0.40436398318756617,
+    "best_em_score": 0.3104575163398693
+  },
+  "ragas": {
+    "faithfulness": 0.6986666666666666,
+    "answer_relevancy": 0.7587756025086508,
+    "context_precision": 0.639999999936,
+    "context_recall": 0.78
+  }
+}
